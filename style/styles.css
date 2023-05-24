@@ -1,0 +1,278 @@
+:root{
+    --blue-text-color: #1778F2;
+}
+*{
+    box-sizing: border-box;
+}
+.logo-container{
+    margin-left:20px;
+}
+.logo{
+    color: var(--blue-text-color);
+}
+
+
+
+.navbar{
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid  lightgray;
+    box-shadow: 0px 1px 3px darkgray;
+    width: 100%;
+    height: 55px;
+    z-index: 1;
+}
+.search-bar-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 680px;
+     
+    border-radius: 20px;
+    background-color: #F0F2F5;
+    position: relative;
+    margin: 0 auto;
+    right: 20px;
+}
+
+.search-bar{
+ position: relative;
+  left:0;
+  display: inline;
+  border: none;
+  background-color: #F0F2F5;
+  
+  width: 100%;
+  border-radius: 20px;
+  height: 95%;
+  outline: none;
+  font-size: 1rem;
+   
+}
+
+.search{
+    border: none;
+    outline: none;
+    height: 95%;
+    width: 100%;
+    background-color: #F0F2F5;
+   font-size: 1rem;
+    border-radius: 20px;
+}
+
+.icon{
+    display: inline;
+    font-size: 1rem;
+    padding: 5px;
+    margin-left:5px;
+    border-radius:20px;
+    color: gray;
+}
+.search-bar-container:hover,
+ .search-bar-container:hover .search-hover:hover{
+    cursor: pointer;
+    background-color: #E4E6E9;
+ }
+
+.alert-icons-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 55px;
+    width: 140px;
+    margin-right: 20px;
+  
+}   
+
+.alert-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #F0F2F5;
+}
+ 
+.alert-icon:hover{
+    cursor: pointer;
+    background-color: #E4E6E9;
+}
+
+
+.nav-icon{
+    font-size: 1.2rem;
+}
+
+.main{
+    
+    display: flex;
+    overflow-x: hidden;
+    
+    
+   
+}
+
+ 
+
+.site-links-container{
+    position: fixed;
+    left: 0px;
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    height: 100vh;
+}
+
+.site-link{
+    margin-top: 10px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    height: 36px;
+    width: 300px;
+    
+}
+.site-link-content{
+    display: flex;
+    align-items: center;
+    
+}
+.site-link:nth-of-type(1){
+    border-left: #1778F2 solid 4px;
+}
+.site-link:hover{
+    cursor: pointer;
+    background-color: #E4E6E9;
+}
+.site-link-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: absolute;
+    left: 60px;
+}
+
+.site-link-icon{
+    color: var(--blue-text-color);
+    margin: 0 auto;
+    position: absolute;
+    left: 20px;
+    font-size: 1.2rem;
+}
+ 
+
+ .feed{
+   position: relative;
+    right: 25px;
+    margin: 0 auto;
+    width: 680px;
+    height: 100%;
+    background-color: gray;
+ }
+ 
+ .social{
+    width: 355px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    background-color: purple;
+ }
+
+ .see-more{    
+    padding: 5px;
+    border-radius: 50%;
+    color: black;
+    background-color: lightgray;
+    
+    
+
+ }
+
+ .divider{
+    margin-top: 5px;
+    width:100%;
+    height: 2px;
+    background-color: lightgrey;
+ }
+ @media screen and  (max-width: 900px)
+ {
+    .search-bar-container{
+ 
+        max-width: 40px;
+        margin-left:40px;
+    }
+    .icon{
+       
+        margin: 0 auto;
+    }
+    .search{
+        display: none;
+    }
+
+    .social{
+        display: none;
+    }
+
+ 
+ }
+ 
+ @media screen and (max-width: 1160px ) and (min-width: 900px){
+    .search-bar-container{
+        margin-left: 100px;
+     
+    }
+
+  
+ }
+
+ @media screen and (max-width: 1160px){
+    .search-bar-container{
+        position: absolute;
+        left: 120px;
+        width: 532px;
+    }
+    .site-links-container,
+    .site-link{
+        min-width: 59px;
+        max-width: 59px;
+    }
+
+    .site-link-title{
+        display: none;
+    }
+
+    .main{
+        justify-content: space-around;
+    }
+    .site-links-container{
+        position: fixed;
+        
+        
+        height: 100%;
+    }
+  
+
+    .divider{
+        margin-top: 15px;
+        width: 50%;
+    }
+    .feed{
+        position: relative;
+        right: 0px;
+        margin-left: 59px;
+        width: auto;
+    }
+ }
+
+ 
+ 
+
+ 
+ 
