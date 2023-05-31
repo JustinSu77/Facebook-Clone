@@ -3,18 +3,20 @@
 }
 *{
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 .logo-container{
-    margin-left:20px;
+  
+    margin-left:15px;
 }
 .logo{
     color: var(--blue-text-color);
 }
 
-
-
+ 
 .navbar{
     position:fixed;
+    top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,20 +25,21 @@
     box-shadow: 0px 1px 3px darkgray;
     width: 100%;
     height: 55px;
-    z-index: 1;
+    z-index: 10;
+    overflow: hidden;
 }
 .search-bar-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 40px;
-    width: 680px;
+    width: 40vw;
      
     border-radius: 20px;
     background-color: #F0F2F5;
     position: relative;
-    margin: 0 auto;
-    right: 20px;
+ 
+    right: 10px;
 }
 
 .search-bar{
@@ -72,6 +75,8 @@
     border-radius:20px;
     color: gray;
 }
+
+
 .search-bar-container:hover,
  .search-bar-container:hover .search-hover:hover{
     cursor: pointer;
@@ -108,106 +113,861 @@
     font-size: 1.2rem;
 }
 
-.main{
-    
-    display: flex;
+.main-container{
+    display:flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    width: 100vw;
+    height: 100%;
     overflow-x: hidden;
+    margin-top: 55px;
+  
+   
+}
+.site-links-container{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: greenyellow;
+}
+.see-all{
+    background-color: lightgray;
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    display: flex;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.divider{
+    margin-top: 5px;
+    width: 100%;
+    height: 2px;
+    background-color: lightgrey;
+}
+ .feed-container{
+    
+    width: 100%;
+    height: 100%;
+    
+ }
+
+ .feed{
+    position: relative;
+    right: 35px;
+    width: 40vw;
+    height: 100%;
+   
+    margin: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+ }
+
+ .social{
+    overflow-y: auto;
+    position: fixed;
+    right: 100px;
+    top: 50px;
+    margin-top: 10px;
+    width: 355px;
+   height: calc(100% - 60px);
+ 
+    background-color: orange;
+ }
+ .site-link{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
     
     
+ }
+ .current-site-link{
+    border-left: 3px solid #1778F2;
+ }
+
+ .current-site-link .site-link-icon{
+    margin-left: 6px;
+ }
+ .site-link-icon{
+    width: 20px;
+    margin-left: 9px;
+    color: var(--blue-text-color);
+
+ }
+
+ .site-link-text{
+    position: absolute;
+    left: 60px;
+    font-size: 1.1rem;
+     
+    overflow: hidden;
+ }
+
+ .site-link:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+ }
+
+
+
+ .user-icon
+ {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: visible;
+}
+
+
+.user-pic{
+    background-image: url('../images/Basketball.png');
+    background-size: contain;
+}
+
+.birthday{
+    display: flex;
+    align-items: center;
+    
+    height : 40px;
+   
+    text-align: center;
+
+    
+}
+
+.birthday:hover{
+    background-color: #F0F2F5;
+    cursor: pointer;
+}
+.birthday-text{
+    overflow: hidden;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.social-heading{
+    margin: 10px;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+.birthday-icon{
+    color: #1778F2;
+    font-size: 1.3rem;
+    position: relative;
+    top: 5px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.contact-section{
+    width: 100%;
+    height: 40px;
+     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+ 
+}
+.contact-icon{
+    color: darkgrey;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+.contact-icon:hover{
+    background-color: lightgray;
+    border-radius: 50%;
+   
+    cursor: pointer;
+}
+ 
+.friend{
+    display: flex;
+    overflow: visible;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    
+} 
+.friend:hover{
+    background-color: #E4E6E9;
+    cursor: pointer;
+}
+
+.friend-name{
+    margin-left: 20px;
+}
+
+.online-icon{
+    display: inline-block;
+    position: relative;
+    left: 21px;
+    top: 15px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid white;
+    background-color: lawngreen;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.away-icon{
+  
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    top: 18px;
+    width: 25px;
+    height: 12px;
+    
+    background-color: #DEEFE1;
+    overflow: visible;
+    border-radius: 30%;
+    
+}
+.away-time{
+    
+    text-align: center;
+    font-weight: 700;
+    color: #2dbd4f;
+    overflow: visible;
+    font-size: .7rem;
+    
+}
+
+.online-status{
+    color: lawngreen;
+    font-size: 20px;
+    font-weight:lighter;
+
+}
+.friend:nth-of-type(1) .friend-icon{
+    background-image: url('../images/magic.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(2) .friend-icon{
+    background-image: url('../images/jordan.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+.friend:nth-of-type(3) .friend-icon{
+    background-image: url('../images/lebron.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(4) .friend-icon{
+    background-image: url('../images/bird.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(5) .friend-icon{
+    background-image: url('../images/hakeem.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(6) .friend-icon{
+    background-image: url('../images/curry.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(7) .friend-icon{
+    background-image: url('../images/iverson.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(8) .friend-icon{
+    background-image: url('../images/kawhi.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(9) .friend-icon{
+    background-image: url('../images/duncan.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(10) .friend-icon{
+    background-image: url('../images/dikembe.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(11) .friend-icon{
+    background-image: url('../images/laimbeer.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(12) .friend-icon{
+    background-image: url('../images/tmac.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(13) .friend-icon{
+    background-image: url('../images/steven_a_smith.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(14) .friend-icon{
+    background-image: url('../images/shaq.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(15) .friend-icon{
+    background-image: url('../images/barkely.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.friend:nth-of-type(16) .friend-icon{
+    background-image: url('../images/rodman.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+ 
+.friend:nth-of-type(17) .friend-icon{
+    background-image: url('../images/yao-ming.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+ 
+.friend:nth-of-type(18) .friend-icon{
+    background-image: url('../images/jeremy_lin.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.online-status{
+    display: inline-block;
+    font-size: 5px;
+    color: green;
+    text-align: center;
+    
+}
+.group-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightgray;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.group-members{
+    width: 15px;
+    height: 15px;
+    
+    border-radius: 50%;
+}
+
+.friend .group-icon:nth-of-type(1) .group-members:nth-of-type(1){
+    background-image: url('../images/lebron.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+
+ .group-icon:nth-of-type(1) .group-members:nth-of-type(2){
+    background-image: url('../images/jordan.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.group-icon:nth-of-type(1) .group-members:nth-of-type(3){
+    background-image: url('../images/magic.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+
+.group-icon:nth-of-type(1) .group-members:nth-of-type(4){
+    background-image: url('../images/bird.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.group-conversation .friend:nth-of-type(2) .group-icon .group-members:nth-of-type(1){
+    background-image: url('../images/iverson.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.group-conversation .friend:nth-of-type(2) .group-members:nth-of-type(2){
+    background-image: url('../images/curry.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+.group-conversation .friend:nth-of-type(3) .group-icon .group-members:nth-of-type(1){
+    background-image: url('../images/yao-ming.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.group-conversation .friend:nth-of-type(3) .group-members:nth-of-type(2){
+    background-image: url('../images/jeremy_lin.jpeg');
+    background-size: contain;
+    background-position: center;
+}
+
+.group-online-icon{
+    display: inline-block;
+    position: relative;
+    
+    top: 12px;
+    right: 5px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid white;
+    background-color: lawngreen;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.user-pic-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12px;
+    width: 12px;
+    position: relative;
+    left: 10px;
+    top: 12px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    font-size: 8px;
+}
+
+.create-new-group{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+.stories_reels{
+    
+    overflow: hidden;
+    width: 100%;
+    height: 320px;
+    background-color: white;
+}
+
+.stories_reels .heading{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #E4E6E9;
+    overflow: hidden;
+ 
+}
+.active{
+    color: #1778F2;
+}
+.stories_reels_title{
+    height: auto;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+
+    
+}
+.stories_reels_title:nth-of-type(1){
+    border-radius: 0px;
+    margin-left: 10px;
+    border-bottom: 3px solid #1778F2;
+}
+
+.stories_reels_title:nth-of-type(2){
+    margin: 3px;
+}
+ 
+.stories_reels_title:nth-of-type(2):hover{
+    
+    background-color:#E4E6E9;
+}
+.stories-heading-text{
+    overflow: hidden;
+    color: black;
+    margin-left: 10px;
+    font-size: 1.1rem;
+}
+.active{
+    color: #1778F2;
+}
+.stories_reel_icon{
+    color: black;
+}
+ .stories-heading-text-active{
+    margin-left: 10px;
+ }
+
+.stories-heading-text-active{
+    color: grey;
+    margin-left: 5px;
+}
+.stories-container{
+    
+    margin-top: 3px;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    width: 112.5px;
+    height: 200px;
+    background-color: gray;
+    border-radius: 10%;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid lightgray;
+ 
+}
+.create-story-profile-pic{
+    height: 70%;
+    width: 100%;
+    background-image: url('../images/Basketball.png');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
    
 }
 
- 
-
-.site-links-container{
-    position: fixed;
-    left: 0px;
-    margin-top: 55px;
+.create-story-new{
+    position: relative;
+    overflow: visible;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 300px;
-    height: 100vh;
+    width: 100%;
+    height: 30%;
+    background-color: white;
+   
 }
 
-.site-link{
-    margin-top: 10px;
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    height: 36px;
-    width: 300px;
-    
-}
-.site-link-content{
+.create-story-plus{
     display: flex;
     align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 15px;
+    overflow: visible;
+    height: 40px;
+    width: 40px;
+    background-color: #1778F2;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.create-story-heading{
+    position: relative;
+    bottom: 10px;
     
 }
-.site-link:nth-of-type(1){
-    border-left: #1778F2 solid 4px;
+.story:hover{
+    cursor: pointer;
 }
-.site-link:hover{
+ 
+.story{
+  
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.story-inner-image{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+}
+ 
+.story-inner-image:hover{
+    transform: scale(1.01,1.01);
+}
+
+ 
+.story:hover{
+    filter: brightness(0.8);
+    
+}
+
+ 
+.story-poster{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    border: 3px solid #1778F2;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+
+    background-position: center;
+    background-size: contain;
+}
+
+.story-poster:nth-of-type(2){
+    position: relative;
+    top: 5px;
+    left: 5px;
+    border: 3px solid #1778F2;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+ 
+    background-position: center;
+    background-size: contain;
+}
+.stories-container .story:nth-of-type(2) .story-poster{
+    background-image: url('../images/steven_a_smith.jpeg');
+}
+
+.stories-container .story:nth-of-type(2) .story-inner-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/iverson_step_over.jpg');
+}
+ 
+.stories-container .story:nth-of-type(3) .story-inner-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/barkely_sleeping.jpg');
+}
+.stories-container .story:nth-of-type(3) .story-poster{
+    background-image: url('../images/shaq.jpeg');
+}
+
+ 
+.poster-name{
+    color: white;
+    position: relative;
+    top: 120px;
+    font-size: 1rem;
+    width: 100px;
+    margin-left: 10px;
+    z-index: 2;
+    
+}
+
+.user-post-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height: 120px;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.user-post{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 65%;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.post-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 90%;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: #F0F2F5;
+    position: relative;
+ 
+    right: 10px;
+}
+
+ 
+   
+   .post-text-box{
+       border: none;
+       outline: none;
+       height: 100%;
+       width: 100%;
+       background-color: #F0F2F5;
+      font-size: 1rem;
+       border-radius: 20px;
+       margin-left: 10px;
+   }
+.post-box:hover{
     cursor: pointer;
     background-color: #E4E6E9;
 }
-.site-link-title{
-    font-size: 1.2rem;
-    font-weight: 500;
-    position: absolute;
-    left: 60px;
+ 
+.user-post-divider{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    bottom: 10px;
+   height: 2px;
+   width: 95%;
+   background-color: #E4E6E9;
 }
 
-.site-link-icon{
-    color: var(--blue-text-color);
-    margin: 0 auto;
-    position: absolute;
-    left: 20px;
-    font-size: 1.2rem;
+.post-box:hover,
+ .post-box:hover .search-hover:hover{
+    cursor: pointer;
+    background-color: #E4E6E9;
+ }
+
+ .post-options-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45%;
+    width: 100%;
+    
+ }
+ 
+.post-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 75%;
+    border-radius: 10px;
+    font-size: 1rem;
+ }
+
+ .post-option:hover{
+    background-color: #E4E6E9;
+    cursor: pointer;
+ }
+ .post-option-icon{
+    margin-right: 10px;
+    font-size: 1.3rem;
+ }
+
+ .red{
+    color: red;
+ }
+
+.limegreen{
+    color: limegreen;
+}
+
+.yellow{
+    color: orange
 }
  
+ .post-option-heading{
+    font-size: 0.9rem;
+    overflow: hidden;
+ }
 
- .feed{
-   position: relative;
-    right: 25px;
+ .post{
+    overflow: hidden;
+    margin-top: 20px;
+    height: 850px;
+    width: 100%;
+    background-color: white;
+ }
+
+ .post-suggestion{
+    overflow: visible;
+    font-size: 0.8rem;
+    color: gray;
+    font-family: Verdana;
+    margin: 20px;
+    position: relative;
+    left: 8px;
+ }
+ .post-divider{
+    height: 1px;
+    width: 95%;
     margin: 0 auto;
-    width: 680px;
-    height: 100%;
-    background-color: gray;
- }
- 
- .social{
-    width: 355px;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    background-color: purple;
- }
-
- .see-more{    
-    padding: 5px;
-    border-radius: 50%;
-    color: black;
-    background-color: lightgray;
-    
-    
-
- }
-
- .divider{
-    margin-top: 5px;
-    width:100%;
-    height: 2px;
     background-color: lightgrey;
+ }
+ @media screen  and (max-width: 1160px)
+ {
+    .site-links-container{
+        position: fixed;
+        width: 59px;
+        z-index: 1;
+    }
+    
+    .site-link{
+        width: 59px;
+    }
+
+    .site-link-text{
+        display: none;
+    }
+
+    .feed{
+        position: relative !important;
+        right: 160px;
+        width: 50%;
+         
+    }
+    
+    .divider{
+        width: 30%;
+        margin: 0 auto;
+    }
+   
+   
  }
  @media screen and  (max-width: 900px)
  {
     .search-bar-container{
- 
+        position: absolute !important;
         max-width: 40px;
-        margin-left:40px;
+        left: 150px;
+
     }
+    
     .icon{
        
         margin: 0 auto;
@@ -219,55 +979,32 @@
     .social{
         display: none;
     }
-
- 
- }
- 
- @media screen and (max-width: 1160px ) and (min-width: 900px){
-    .search-bar-container{
-        margin-left: 100px;
-     
-    }
-
-  
- }
-
- @media screen and (max-width: 1160px){
-    .search-bar-container{
-        position: absolute;
-        left: 120px;
-        width: 532px;
-    }
-    .site-links-container,
-    .site-link{
-        min-width: 59px;
-        max-width: 59px;
-    }
-
-    .site-link-title{
-        display: none;
-    }
-
-    .main{
-        justify-content: space-around;
-    }
-    .site-links-container{
-        position: fixed;
-        
-        
-        height: 100%;
-    }
-  
-
-    .divider{
-        margin-top: 15px;
-        width: 50%;
-    }
+    
     .feed{
-        position: relative;
+        min-width: 75%;
+    
+        margin-top: 10px;
+        position: fixed;
+        top: 0;
+        left: 25px;
         right: 0px;
-        margin-left: 59px;
-        width: auto;
+        bottom: 0;
+      
+        
+    }
+    
+ 
+ }
+ 
+ @media screen and (max-width: 615px){
+    .feed{
+        min-width: 83%;
+    }
+ }
+ 
+ @media screen and (max-width: 1800px){
+    .social{
+       right: 0px;
     }
  }
 

@@ -28,123 +28,358 @@
       <div class = "alert-icons-container">
            <div class = "alert-icon"><i class="fa-brands fa-facebook-messenger nav-icon"></i></div>
            <div class = "alert-icon"><i class="fa-solid fa-bell nav-icon"></i></div>
-           <div class = alert-icon><i class="fa-solid fa-user nav-icon"></i></div> 
+           <div class = "alert-icon user-pic"><div class = "user-pic-icon"><i class="fa-solid fa-angle-down"></i></div></div> 
       </div>
       
     </nav>
 
-      <main class = "main">
+      <section class = "main-container">
         <section class = "site-links-container">
-          <div class = "site-link">
-            <div class = "site-link-content">
-              <i class="site-link-icon fa-solid fa-house"></i>
-            <p class = "site-link-title">Home</p>
-            </div>
-            
-          </div>
-          <div class = "site-link">
-            <div class="site-link-content">
-              <i class="site-link-icon fa-solid fa-user"></i>
-              <p class = "site-link-title">User</p>
-            </div>
-            
-          </div>
-
-          <div class = "divider"></div>
-          <div class = "site-link">
-            <div class="site-link-content">
-              <i class="site-link-icon fa-solid fa-tv"></i>
-              <p class = "site-link-title">Watch</p>
-            </div>
-            
+          <div class = "current-site-link site-link">
+            <p><i class=" site-link-icon fa-solid fa-house"></i></p>
+            <p class = "site-link-text">Home</p>
           </div>
 
           <div class = "site-link">
-            <div class="site-link-content">
-              <i class="site-link-icon fa-solid fa-user-group"></i>
-              <p class = "site-link-title">Friends</p>
-            </div>
-            
+            <div class = "user-icon user-pic"></div> 
+            <p class = "site-link-text">Basketball Gods</p>
           </div>
-
+          <div class ="divider"></div>
+          <div class = "site-link">
+            <p><i class=" site-link-icon fa-solid fa-tv"></i></p>
+            <p class = "site-link-text">Watch</p>
+          </div>
 
           <div class = "site-link">
-            <div class="site-link-content">
-              <i class="site-link-icon fa-solid fa-shop"></i>
-              <p class = "site-link-title">Marketplace</p>
-            </div>
-            
+            <p><i class=" site-link-icon fa-solid fa-user-group"></i></p>
+            <p class = "site-link-text">Friends</p>
           </div>
-
 
           <div class = "site-link">
-            <div class="site-link-content">
-              <i class="site-link-icon see-more fa-solid fa-list-ul"></i>
-              <p class = "site-link-title">See More</p>
-            </div>
-            
+            <p><i class=" site-link-icon fa-solid fa-shop"></i></p>
+            <p class = "site-link-text">Marketplace</p>
           </div>
-          <div class = "divider"></div>
+
+          
+          <div class = "site-link">
+             <div class = "see-all">
+              <i class="fa-solid fa-list"></i>
+             </div>
+            <p class = "site-link-text">See All</p>
+          </div>
+          <div class ="divider"></div>
         </section>
+
+        <section class = "feed-container">
+          <section class = "feed">
+            <div class = "stories_reels">
+              <div class = "heading">
+                  <div class = "stories_reels_title active">
+                    <i class="stories_reel_icon-active fa-solid fa-book-open"></i>
+                    <h2 class = "stories-heading-text active">Stories</h2>
+                  </div>
+                  <div class = "stories_reels_title">
+                    <i class=" stories_reel_icon fa-solid fa-film"></i>
+                    <h2 class ="stories-heading-text">Reels</h2>
+                  </div>
+ 
+              </div>
+              
+              <div class = "stories-container">
+                <div class = "story create-story">
+                   <div class = "create-story-profile-pic">
+
+                   </div>
+                   <div class = "create-story-new">
+                      <div class = "create-story-plus">
+                        <i class="fa-solid fa-plus"></i>
+                      </div>
+                      <p class = "create-story-heading">Create Story</p>
+                   </div>
+                </div>
+
+                <div class = "story">
+                  <div class = "story-poster"></div>
+                  <p class = "poster-name">Stephen A. Smith</p>
+                     <div class = "story-inner-image"></div>
+                  
+                </div>
+
+
+                <div class = "story">
+                  <div class = "story-poster"></div>
+                  <p class = "poster-name">Shaquille O'Neal</p>
+                  <div class = "story-inner-image"></div>
+                </div>
+              </div>
+            </div>
+ 
+              <section class = "user-post-container">
+                  <div class = "user-post">
+                     <div class ="alert-icon user-pic">
+
+                     </div>
+
+                     <div class = "post-box">
+            
+                      <input class = "post-text-box search-hover" placeholder = "What's on your mind, Basketball Gods?" type="text">
+                     </div>
+
+                   
+                  </div>
+                  <span class = "user-post-divider"></span>
+                  
+                  <div class = "post-options-container">
+                      <div class = "post-option">
+                        <i class="fa-solid fa-video post-option-icon red"></i>
+                        <p class = "post-option-heading">Live video</p>
+                      </div>
+
+                      <div class = "post-option">
+                         
+                        <i class="fa-solid fa-image post-option-icon limegreen"></i>
+                        <p class = "post-option-heading">Photo/video</p>
+                      </div>
+
+                      <div class = "post-option">
+                        <i class="fa-solid fa-face-laugh post-option-icon yellow"></i>
+                        <p class = "post-option-heading">Feeling/activity</p>
+                      </div>
+                  </div>
+                </section>
+                <section class = "post">
+                  <p class = "post-suggestion">Suggested for you</p>
+                  <div class = "post-divider"></div>
+                </section>
+          </section>
+          
+        
          
-        <section class = "feed">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat cumque, dolorum aut odit maxime iusto eveniet quis asperiores nemo quos itaque recusandae officia, omnis labore atque. Architecto molestias eaque ut.
-          Reiciendis quam tempora rem cum laudantium quisquam mollitia accusantium dignissimos ducimus ut ab quidem molestiae qui suscipit natus minus tenetur aspernatur, inventore nisi quasi necessitatibus neque aliquid praesentium minima. Error?
-          Dolorum atque est perspiciatis vitae quia! Quas optio quidem dolore maxime? Atque neque libero temporibus quis quos, nesciunt minima! Vel labore ipsum neque quod possimus perspiciatis dolorem accusantium. Vel, itaque!
-          Provident, similique sapiente veniam assumenda mollitia eveniet. Quo, nihil sequi labore in accusantium quaerat pariatur magni commodi. Debitis quaerat delectus corporis similique expedita perspiciatis, excepturi perferendis, dolorem cumque nulla rem?
-          Non praesentium, dolore officiis quos accusantium ratione odio possimus ab repellat ullam, nobis quisquam repudiandae aut ea quae soluta quibusdam. Sint quod ad reiciendis, ex soluta esse fugiat alias natus.
-          Quibusdam itaque veniam vero nam esse impedit quos, molestiae, tenetur ducimus, mollitia ipsam. Quod, quas aut. Deserunt laborum vero eos, quaerat est beatae molestias voluptatem dicta quidem obcaecati voluptatum adipisci.
-          Voluptatibus consequuntur cum tempore labore rem harum mollitia nostrum quos vitae, in quaerat nam quibusdam. Possimus nulla a molestias, maiores quam omnis esse deleniti quibusdam, accusamus fugit, ut minima dolorem.
-          Alias modi rem sunt illum, sequi deleniti incidunt optio libero dolore consequuntur nemo sapiente dolorum quas cupiditate rerum. Totam ullam optio, ratione placeat accusantium beatae quis. Recusandae quia ducimus ipsam.
-          Ipsum deleniti quod atque, quia officia corporis vel voluptatum iste quam provident dicta, dolorum excepturi eligendi illum aut amet veniam eius porro. Temporibus praesentium facilis mollitia reprehenderit sapiente quia consequuntur.
-          Inventore neque beatae quam? Quod non officia accusamus atque porro nulla cum repellat. Sunt provident iste, consequatur quibusdam veritatis nihil, incidunt ipsam a beatae molestiae tempore delectus est impedit blanditiis.
-          Aperiam perferendis quae quibusdam? Cumque in recusandae dignissimos suscipit quaerat temporibus ipsa repellat quae est sunt possimus dolores dolorem, accusamus ex, mollitia aspernatur laborum id maiores. Cum veritatis sit consequuntur!
-          Repudiandae aspernatur quaerat similique deserunt, nam, amet at fuga quas tenetur rem ipsum, rerum ad quam iste? Dolores temporibus esse, enim voluptates quidem corrupti porro dignissimos ipsam vitae, obcaecati modi?
-          Culpa voluptatum, doloribus molestiae vitae quaerat obcaecati id porro enim saepe placeat consectetur nobis minima! Sit molestias voluptatibus non quas nulla, tempore nam itaque minima facere necessitatibus enim asperiores doloremque.
-          Sapiente, voluptatem culpa facilis quos corporis, vel et odit dolorum eos ducimus officiis labore aperiam. Vitae ex odit a reiciendis magni sint, nesciunt earum debitis perspiciatis, illo sed ratione quas.
-          Alias, recusandae ex dolore officiis facere quis? Tenetur ipsa provident natus esse cum obcaecati nostrum, aliquid vel blanditiis in assumenda quam et! Sed, nulla debitis. Inventore minus officia quasi doloribus.
-          Aut itaque eius debitis eaque obcaecati, ea, sed odit repellendus quae cum vero ex nobis explicabo a. Reiciendis, ea. Obcaecati veniam adipisci inventore nobis suscipit vel labore tenetur distinctio magnam.
-          Ipsa numquam vel rem, atque cumque dignissimos officia exercitationem dolore debitis eveniet. Fugiat dignissimos explicabo quasi iure corporis dolores, deleniti placeat praesentium quidem, accusamus soluta harum assumenda nisi maxime nihil?
-          Quia, unde? Eligendi distinctio nesciunt expedita amet dicta vitae, repellat ipsum nostrum corporis assumenda quidem officia eaque ea. Laboriosam omnis explicabo voluptatum aut sint aspernatur doloremque ipsum quas laborum maiores!
-          Debitis tempore dolor est quo autem omnis fuga quibusdam sapiente consectetur ullam, quisquam tempora vitae id, inventore nisi iusto consequuntur eveniet quasi! Veniam adipisci suscipit incidunt. Debitis mollitia voluptatibus natus?
-          Laudantium temporibus, illo similique necessitatibus architecto hic consequatur excepturi reiciendis ad quos modi voluptas voluptate facilis ratione repellat eveniet porro tempore blanditiis? Eaque ratione eum delectus ab voluptatibus. Doloribus, illo!
-          Aliquam, beatae nam? Ut maiores quod debitis nisi recusandae sunt earum a reiciendis, totam odit dolore autem veniam consectetur facilis, animi sit, impedit iure ab! Molestias atque at officia asperiores.
-          Ducimus iusto voluptatibus nulla. Molestias alias, qui provident saepe architecto aperiam sed? Voluptas distinctio, corporis enim sit, porro architecto repudiandae a sed atque sunt in ipsum hic sint ab provident.
-          Ad, obcaecati consequuntur quam quibusdam repellendus sapiente nisi quas in dolorum excepturi similique harum delectus expedita, vel facere nulla. Repellat ipsa rerum aliquam, consequatur omnis sit ipsam ea deleniti voluptatibus.
-          Culpa id inventore dolores eligendi quos accusantium rerum excepturi, repellat iure autem, rem laboriosam nostrum voluptatem velit earum alias nesciunt, qui veritatis? Magni ducimus modi consequatur corrupti facilis, maiores repudiandae.
-          Aliquid rem quasi corrupti optio modi hic architecto deserunt dignissimos facere! Eius beatae sint aliquid itaque, nesciunt eum porro temporibus dicta distinctio! Totam dolor harum dicta temporibus. Quas, sunt maiores?
-          Ducimus, odit vitae tempora assumenda veniam eaque debitis error corrupti culpa! Reprehenderit dignissimos sequi temporibus, laborum aperiam cumque, aut nam quo sapiente in eveniet ipsum quidem ullam odit tempora earum.
-          Quibusdam dolore, nihil ipsum deserunt ex quisquam asperiores, iusto sit ab nesciunt, eveniet aspernatur! Itaque voluptatibus maxime, blanditiis unde veritatis ex maiores ipsum nam. Iusto, repellat temporibus? Tenetur, autem voluptas.
-          Voluptatem quam ullam, explicabo at, nulla corrupti harum ducimus quod atque perferendis sunt voluptatum cupiditate placeat officia odit voluptate sed pariatur adipisci velit rerum incidunt. Harum ea dignissimos velit? Vitae.
-          Impedit harum repudiandae enim asperiores assumenda doloremque quam doloribus nulla, dolorem, iusto sit sequi consequuntur quod quis delectus? Eius consectetur laboriosam a nisi sapiente doloremque nostrum? In non at magni.
-          Aspernatur, dolor laboriosam! Odio, nisi! Aliquam qui quaerat quae omnis architecto odit quia vel aperiam. Nisi praesentium odit ea pariatur quis, nobis ducimus rem, sed amet enim a, nostrum fugiat!
-          Consequatur molestias nam praesentium explicabo, illo deleniti voluptate incidunt natus, minima nihil earum harum vero et impedit atque. Reiciendis, itaque quaerat porro perspiciatis cumque neque temporibus optio esse unde non!
-          Quis, dignissimos, in suscipit similique labore dolore totam iste expedita magni quidem sint ipsa quaerat odit! Ipsum id quisquam laborum tenetur obcaecati enim facilis, earum nobis voluptas beatae iure quidem?
-          Odio earum error dolor fugit ratione minima quidem laudantium tenetur mollitia ipsam fugiat accusamus, dolorum, dolorem cupiditate, qui cumque dolore at! Facere consectetur obcaecati facilis recusandae libero quisquam, illum aut.
-          Veniam, perspiciatis, quis iure velit sed in aperiam cum dolore eaque quo maiores, nostrum eveniet? Voluptatum obcaecati molestiae dolorum? Est, maiores? Sunt consequatur est voluptas quis nostrum magnam quam? Reprehenderit.
-          Culpa, eum soluta repudiandae ex commodi explicabo minima. Rem adipisci consequuntur quidem delectus. Facere eos, expedita nesciunt temporibus repellat mollitia eum ducimus obcaecati blanditiis? Qui, harum eveniet. Minima, ipsam vero?
-          Quo, iusto facilis quia quisquam impedit aspernatur necessitatibus. Cumque veniam ut, molestias itaque ipsa quae quibusdam temporibus repellendus pariatur, quod eos et velit! Ut recusandae consectetur eaque, pariatur adipisci non.
-          Sapiente nesciunt nulla aliquid iste ipsum similique cum possimus nostrum quos iure debitis, reiciendis neque nihil exercitationem. Consectetur soluta, pariatur illum alias, incidunt laborum repudiandae sequi assumenda ex impedit vitae.
-          Ducimus ipsa quos eveniet, recusandae dicta tempora vitae dignissimos veritatis quibusdam quisquam at ipsum doloribus adipisci labore excepturi amet assumenda, explicabo cupiditate numquam. A, blanditiis animi. Neque fugit consectetur repellendus.
-          Voluptate laborum enim sit, dolores modi numquam commodi suscipit ipsa soluta nemo velit in quo animi cupiditate. Est natus omnis ullam explicabo molestias, illum totam, ex vel eveniet recusandae ab!
-          Quia alias omnis neque assumenda ad qui quidem quod, in iusto quos odit velit dicta quis non nulla illum quisquam ipsa amet pariatur libero minima reiciendis eligendi inventore. Ipsam, provident.
-          Aliquid iusto culpa tempore voluptatibus pariatur facilis delectus hic voluptatem magni eaque expedita ducimus temporibus, neque vero dolorem quae assumenda consequatur consectetur, commodi optio voluptate ipsam officiis sequi ut. Assumenda!
-          Laboriosam, reiciendis nobis? Possimus voluptatibus laudantium sed repudiandae tenetur, nisi nemo error eaque reiciendis iusto ducimus porro. Quae iste mollitia delectus quidem quisquam facere asperiores, alias iure voluptatibus velit rerum.
-          Quibusdam dolorem aspernatur quidem ex, hic adipisci facere fugiat architecto obcaecati mollitia, deserunt distinctio omnis cum placeat dignissimos saepe temporibus consequuntur assumenda? Excepturi animi eveniet reiciendis, autem ex in quia?
-          Consequuntur earum numquam doloremque repudiandae officiis blanditiis odit omnis consequatur sunt molestiae ut architecto voluptatem sed dolore dicta cupiditate magni unde, inventore eaque rem laboriosam ipsam? Ipsam nesciunt atque nemo?
-          Inventore et aliquam sunt delectus ad quaerat cupiditate, maiores consequatur, officia architecto a eius tenetur ipsam autem modi excepturi voluptatem doloremque veniam rem iure eveniet totam odio. Suscipit, voluptate sequi?
-          Reprehenderit mollitia, harum beatae magni repellendus quam nostrum eum impedit hic voluptatibus libero dignissimos. Provident libero tempora fugit quo labore voluptatum nostrum obcaecati commodi quas molestiae! Obcaecati vero maxime tenetur.
-          Ullam saepe molestias, pariatur reprehenderit praesentium neque libero consequatur veritatis deserunt earum cum nam mollitia expedita incidunt tenetur, harum perspiciatis sed officiis exercitationem? Enim asperiores iste temporibus quos voluptates fuga?
-          Modi reprehenderit obcaecati sapiente, error iste, voluptatibus voluptate numquam in ratione ex a quasi optio vel totam laboriosam accusamus illum voluptates animi eaque distinctio minus nemo iure cumque explicabo. Ex!
-          Quae, voluptate deserunt. Minus, ipsum. Facilis nostrum iste quidem quod illum magni. Obcaecati saepe velit, ab incidunt assumenda eligendi ad consequuntur repudiandae tenetur hic, omnis, delectus est enim! Eos, at?
-          Blanditiis eum necessitatibus quibusdam esse ab, sequi autem quos dolores aut fugiat eligendi? Voluptates, officiis et, libero velit tempora, ea reiciendis quidem aliquid nulla nostrum labore. Exercitationem eum ipsum culpa.</p>
+          
         </section>
 
+
+    
 
         <section class = "social">
+          
+            <div class = "birthday-section">
+              <h2 class = "social-heading">Birthdays</h2>
+              <div class = "birthday">
+                <p class = "birthday-text"><i class="birthday-icon fa-solid fa-gift"></i>Larry Bird's birthday is today.</p>
+              </div>
+                
+            </div>
+            <div class = "contact-section">
+              <h2 class ="social-heading">Contacts</h2>
+              <div class = "contact-icon-container">
+                <i class="contact-icon fa-solid fa-video"></i>
+                <i class="contact-icon fa-solid fa-magnifying-glass"></i>
+                <i class="contact-icon fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+            <div class = "contacts">
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                  <div class = "online-icon">
 
-        </section>
-      </main>
+                  </div>
+                </div>
+                <p class = "friend-name">Magic Johnson</p>
+              </div>
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                  <div class = "away-icon">
+                    <p class = "away-time">23m</p>
+                  </div>
+                </div>
+                <p class = "friend-name">Michael Jordan</p>
+              </div>
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Lebron James</p>
+              </div>
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                  <div class = "online-icon">
+
+                  </div>
+                </div>
+                <p class = "friend-name">Larry Bird</p>
+              </div>
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                  <div class = "online-icon">
+
+                  </div>
+                </div>
+                <p class = "friend-name">Hakeem Olajuwon</p>
+              </div>
+            
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Stephen Curry</p>
+              </div>
+             
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Allen Iverson</p>
+              </div>
+
+             
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Kawhi Leonard</p>
+              </div>
+
+  
+             
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Tim Duncan</p>
+              </div>
+ 
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Dikembe Mutombo</p>
+              </div>
+             
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Bill Laimbeer</p>
+              </div>
+
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Tracy Mcgrady</p>
+              </div>
+
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Stephen A Smith</p>
+              </div>
+              
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Shaquille O'Neal</p>
+              </div>
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Charles Barkely</p>
+              </div>
+             
+              
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Dennis Rodman</p>
+              </div>
+      
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Yao Ming</p>
+              </div>
+      
+              <div class = "friend">
+                <div class = "user-icon friend-icon">
+                 
+                </div>
+                <p class = "friend-name">Jeremy Lin</p>
+              </div>
+      
+              
+              <div class = "group-conversation">
+                <h2 class = "social-heading">Group Conversations</h2>
+                <div class = "friend">
+                  <div class = "group-icon">
+                 
+                   
+                      <div class = "group-members"></div>
+                      <div class = "group-members"></div>
+                      <div class = "group-members"></div>
+                      <div class = "group-members"></div>
+                  </div>
+                  <span class = "group-online-icon"></span>
+                  <p class = "friend-name">GOAT DISCUSSION</p>
+                </div>
+              
+                <div class = "friend">
+                  <div class = "group-icon">
+                 
+                   
+                      <div class = "group-members"></div>
+                      <div class = "group-members"></div>
+                     
+                  
+                    
+                    
+                  </div>
+                  <span class = "group-online-icon"></span>
+                  <p class = "friend-name">HANDLEZ</p>
+                </div>
+
+                <div class = "friend">
+                  <div class = "group-icon">
+                 
+                   
+                      <div class = "group-members"></div>
+                      <div class = "group-members"></div>
+                     
+                  
+                    
+                    
+                  </div>
+                  <span class = "group-online-icon"></span>
+                  <p class = "friend-name">ASIAN BOYZ</p>
+                </div>
+
+              
+                <div class = "friend">
+                  <div class = "group-icon create-new-group">
+                 
+                   <p><i class="fa-solid fa-plus"></i></p>
+                    
+                
+                  
+                  
+                </div>
+                <p class = "friend-name">Create new group</p>
+                </div>
+              
+              </div>
+              
+          
+            </section>
+            <div></div>
+           
+      </section>
+       
+      
 </body>
  
 </html>
