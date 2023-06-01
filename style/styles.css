@@ -5,6 +5,9 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
+body{
+    position: relative;
+}
 .logo-container{
   
     margin-left:15px;
@@ -94,13 +97,14 @@
 }   
 
 .alert-icon{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 40px;
     width: 40px;
     border-radius: 50%;
     background-color: #F0F2F5;
+    overflow: visible;
 }
  
 .alert-icon:hover{
@@ -110,6 +114,7 @@
 
 
 .nav-icon{
+    
     font-size: 1.2rem;
 }
 
@@ -126,11 +131,14 @@
 }
 .site-links-container{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
+
     position: fixed;
     width: 300px;
-    height: 100%;
-    background-color: greenyellow;
+    height: calc(100% - 50px);
+    background-color: white;
 }
 .see-all{
     background-color: lightgray;
@@ -177,7 +185,7 @@
     width: 355px;
    height: calc(100% - 60px);
  
-    background-color: orange;
+    background-color: white;
  }
  .site-link{
     display: flex;
@@ -228,11 +236,15 @@
 }
 
 
+
 .user-pic{
     background-image: url('../images/Basketball.png');
     background-size: contain;
 }
 
+ .user-pic:hover{
+    filter: brightness(0.9);
+ }
 .birthday{
     display: flex;
     align-items: center;
@@ -304,6 +316,7 @@
     height: 50px;
     
 } 
+
 .friend:hover{
     background-color: #E4E6E9;
     cursor: pointer;
@@ -819,7 +832,7 @@
     justify-content: space-around;
     align-items: center;
     height: 40px;
-    width: 90%;
+    width: 85%;
     margin-left: 10px;
     border-radius: 20px;
     background-color: #F0F2F5;
@@ -830,7 +843,7 @@
 
  
    
-   .post-text-box{
+.post-text-box{
        border: none;
        outline: none;
        height: 100%;
@@ -907,19 +920,26 @@
  }
 
  .post{
-    overflow: hidden;
+ 
+  
     margin-top: 20px;
+    margin-bottom: 10px;
     height: 850px;
     width: 100%;
     background-color: white;
  }
 
+ .post-heading{
+    width: 100%;
+    overflow: hidden;
+    height: 12%;
+ }
  .post-suggestion{
     overflow: visible;
     font-size: 0.8rem;
     color: gray;
     font-family: Verdana;
-    margin: 20px;
+    margin: 15px;
     position: relative;
     left: 8px;
  }
@@ -927,16 +947,311 @@
     height: 1px;
     width: 95%;
     margin: 0 auto;
+    
+    margin-bottom: 5px;
     background-color: lightgrey;
+ }
+
+ .new-message{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 1.2rem;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px gray;
+    background-color: white;
+    position: fixed;
+    bottom: 1.5%;
+    right: 2%;
+ }
+ 
+ .new-message:hover{
+    background-color: #E4E6E9;
+    cursor: pointer;
+ }
+
+ .site-link-links{
+    height: 40px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0px; 
+    left: 5px;
+    margin: 5px;
+ }
+
+ .site-link-link{
+    font-size: 0.8rem;
+    color: gray;
+    text-decoration: none;
+ }
+
+ .site-link-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+ }
+
+ .notification-count-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    width: 25px;
+    background-color: red;
+    position: relative;
+    top: -18px;
+    left: 20px;
+    border-radius: 50%;
+    z-index: 10;
+ }
+ .notification{
+    position: relative;
+    right: 12px;
+ }
+ 
+ .notification-count{
+    font-family: Arial;
+    color: white;
+    font-size:  0.85rem;
+    font-weight: 500;
+ }
+ .post-poster-info-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin: 10px auto;
+    width: 95%;
+    height: 45px;
+    /* background-color: gray; */
+ }
+
+ .poster-info{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 170px;
+    /* background-color: lightgray; */
+ }
+
+ .poster-options{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100px;
+  
+ }
+
+ .poster-options-option{
+    font-size: 1.1rem;
+    border-radius: 50%;
+  
+    padding: 10px;
+    color: gray;
+ }
+
+ .poster-options-option:hover{
+    background-color: #F0F2F5;
+    cursor: pointer;
+ }
+ .poster-profile-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40px;
+ }
+
+ .poster-profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40px;
+    width: 45px;
+    background-color: white;
+    background-image: url('../images/nba-logo.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid #1778F2;
+    overflow: visible;
+ }
+
+ .poster-profile:hover{
+    cursor: pointer;
+    background-color: lightgray;
+ }
+ .poster-date-info{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+    
+ }
+
+ .poster-info-name{
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    height: 50%;
+    width: 100%;
+    
+ }
+
+ .poster-check{
+    margin-left: 5px;
+    color: #1778F2;
+ }
+ .poster-info-date{
+    display: flex;
+    height: 50%;
+    width: 150px;
+    /* background-color: lightskyblue;
+ } */
+ }
+ .poster-info-date-text{
+    font-size: 0.75rem;
+    color: gray;
+ }
+
+ .poster-online-icon{
+    position: relative;
+    top: 15px;
+    left: 0px;
+    font-size: 0.6rem;
+    overflow:visible;
+    height: 8px;
+    width: 8px;
+    background-color: limegreen;
+    border-radius: 50%;
+    
+ }
+
+ .post-content{
+    width: 100%;
+    height: 78%;
+    overflow: hidden;
+   /* background-color: lightcyan; */
+ }
+
+ .post-content-text-container{
+   /* background-color: yellow; */
+    height: 15%;
+ }
+ .post-content-text{
+    margin: 20px;
+
+ }
+
+ .post-content-image-container{
+    width: 100%;
+    height: 85%;
+     background-color: gray;
+    background-image: url('../images/finals_schedule.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+ .post-social{
+    
+    width: 100%;
+    height: 10%;
+    /* background-color: rgb(167, 66, 167); */
+ }
+
+ .post-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    /* background-color: lightgreen; */
+ }
+
+ .post-interact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    /* background-color: orange; */
+    
+ }
+
+ .post-interaction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    
+
+ }
+
+ .post-interaction-text{
+    margin-left: 10px;
+   
+ }
+ .gray{
+    color: gray;
+ }
+ .post-interaction:hover{
+    cursor: pointer;
+    background-color: lightgray;
+ }
+ .like-heart-count-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100px;
+ }
+ 
+ .like_heart{
+    display: flex;
+    justify-content: center;
+ }
+ .like-share-container{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    color: gray;
+ }
+ .like-share-count:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+ 
+
+ .thumbs-up{
+    color: #1778F2;
+ }
+ .heart{
+    color: red;
+ }
+
+ .like-count-text{
+    color: grey;
  }
  @media screen  and (max-width: 1160px)
  {
     .site-links-container{
-        position: fixed;
+        
         width: 59px;
         z-index: 1;
     }
-    
+    .site-link-links{
+        display: none;
+    }
     .site-link{
         width: 59px;
     }
