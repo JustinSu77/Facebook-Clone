@@ -1089,7 +1089,8 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 65%;
+    width: auto;
+    margin-left: 5px;
     
  }
 
@@ -1118,6 +1119,7 @@ body{
     color: gray;
  }
 
+ 
  .poster-online-icon{
     position: relative;
     top: 15px;
@@ -1140,7 +1142,9 @@ body{
 
  .post-content-text-container{
    /* background-color: yellow; */
-    height: 15%;
+    height: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
  }
  .post-content-text{
     margin: 20px;
@@ -1149,19 +1153,22 @@ body{
 
  .post-content-image-container{
     width: 100%;
-    height: 85%;
+    height: 95%;
      background-color: gray;
     background-image: url('../images/finals_schedule.png');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
  }
 
+ .stephen-a{
+    background-image: url('../images/steven_a_smith.jpeg')
+ }
  .post-social{
     
     width: 100%;
     height: 10%;
-    /* background-color: rgb(167, 66, 167); */
+    
  }
 
  .post-rating{
@@ -1169,7 +1176,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 40%;
+    height: 45%;
     /* background-color: lightgreen; */
  }
 
@@ -1178,7 +1185,7 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 50%;
+    height: 45%;
     /* background-color: orange; */
     
  }
@@ -1242,6 +1249,10 @@ body{
  .like-count-text{
     color: grey;
  }
+
+ .jimmy-b{
+    background-image: url('../images/jimmy_butler.jpg');
+ }
  @media screen  and (max-width: 1160px)
  {
     .site-links-container{
@@ -1273,6 +1284,10 @@ body{
     }
    
    
+ }
+
+ .lechoke{
+    background-image: url('../images/lechoke.jpg');
  }
  @media screen and  (max-width: 900px)
  {
