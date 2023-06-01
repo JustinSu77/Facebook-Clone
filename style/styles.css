@@ -141,7 +141,7 @@ body{
     background-color: white;
 }
 .see-all{
-    background-color: lightgray;
+    background-color: rgb(192, 188, 188);
     width: 30px;
     height: 30px;
 
@@ -1281,6 +1281,7 @@ body{
     .divider{
         width: 30%;
         margin: 0 auto;
+        margin-top: 5px;
     }
    
    
